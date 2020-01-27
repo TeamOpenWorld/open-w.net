@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TeamOpenWorld</title>
+
+        <!-- js -->
+        <script src="./assets/js/jquery-v3.4.1.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script>
+            $(() => $('#header').load('./assets/header/header.html'));
+            (function(d) {
+                var config = {
+                kitId: 'ddf1onw',
+                scriptTimeout: 3000,
+                async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <style>
+            .main {
+                font-family: a-otf-midashi-go-mb31-pr6n,sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="header"></section>
+        <section id="main" class="main container mt-5">
+            <h1>TeamOpenWorldのさいと</h1>
+            <p>今作ってるんでちょっとまってください</p>
+        </section>
+    </body>
+</html>
