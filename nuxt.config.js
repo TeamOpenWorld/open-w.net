@@ -34,7 +34,14 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    'nuxt-webfontloader',
   ],
+
+  webfontloader: {
+    google: {
+      families: ['Noto+Sans+JP']
+    }
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
