@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "nuxt generate && gh-pages -d dist"
+    "deploy": "nuxt generate && gh-pages -d dist -t"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
