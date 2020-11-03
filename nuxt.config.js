@@ -35,6 +35,7 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     'nuxt-webfontloader',
+    '@nuxtjs/axios'
   ],
 
   webfontloader: {
