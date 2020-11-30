@@ -17,7 +17,9 @@
         <div class="footer mt-5 py-3">
             <b-container>
                 <p>&copy; TeamOpenWorld 2020</p>
-                <a href="https://twitter.com/openworld_net" target="_blank">Twitter</a>
+                <a href="https://twitter.com/openworld_net" target="_blank"
+                    >Twitter</a
+                >
             </b-container>
         </div>
     </div>
@@ -25,12 +27,24 @@
 
 <script>
 export default {
-  head() {
-    return {
-      title: 'Top'
+    head() {
+        return {
+            title: "Top",
+            meta: [
+                {
+                    hid: "og:title",
+                    property: "og:title",
+                    content: "Top - TeamOpenWorld"
+                },
+                {
+                    hid: "og:description",
+                    property: "og:description",
+                    content: "Official site of TeamOpenWorld."
+                }
+            ]
+        };
     }
-  }
-}
+};
 </script>
 
 <style scoped>
@@ -40,10 +54,10 @@ export default {
 
 .header {
     padding: 10vh 0;
-    background: linear-gradient(-135deg,#e1f6ff, #47c551);
+    background: linear-gradient(-135deg, #e1f6ff, #47c551);
 }
 
 .footer {
-    border-top:2px solid black;
+    border-top: 2px solid black;
 }
 </style>
