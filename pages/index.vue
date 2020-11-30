@@ -1,18 +1,18 @@
 <template>
     <div id="main">
-        <b-jumbotron
-            fluid
-            header="TeamOpenWorld"
-            lead="「自分らしく生きる」を叶える"
-            class="top-title text-white"
-        >
-        </b-jumbotron>
+        <div class="header mb-4">
+            <b-container class="text-white">
+                <h1>TeamOpenWorld</h1>
+                <p>「自分らしく生きる」を支える団体</p>
+            </b-container>
+        </div>
         <b-container class="py-4">
             <h1>Services</h1>
             <a href="https://tokyounderground.net/" target="_blank"
                 >楽曲プロモーションレーベル - TokyoUnderground (2020-)</a
             >
             <h1 class="mt-5">Software</h1>
+            <p>準備中</p>
         </b-container>
         <div class="footer mt-5 py-3">
             <b-container>
@@ -23,14 +23,24 @@
     </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Top'
+    }
+  }
+}
+</script>
+
 <style scoped>
-.top-title {
-    background: linear-gradient(-135deg, #e4a972, #9941d8);
+#main {
     font-family: "Noto Sans JP";
 }
 
-a {
-    font-family: "Noto Sans JP";
+.header {
+    padding: 10vh 0;
+    background: linear-gradient(-135deg,#e1f6ff, #47c551);
 }
 
 .footer {
